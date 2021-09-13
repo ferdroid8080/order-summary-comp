@@ -1,0 +1,151 @@
+:root {
+  /* Primary colors */
+  --pale-blue: hsl(225, 100%, 95%);
+  --bright-blue: hsl(245, 75%, 52%);
+  /* Neutral colors */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  /* Typography */
+  --paragraph-font-size: 1.6rem;
+  --default-font: "Red Hat Display";
+  --h1-weight: 900;
+  --h4-weight: 700;
+  --normal-weight: 500;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: var(--default-font);
+}
+
+h1, h4 {
+  color: var(--dark-blue);
+}
+h1 {
+  font-weight: var(--h1-weight);
+  font-size: 2.1rem;
+}
+h4 {
+  font-weight: var(--h4-weight);
+  font-size: 1.4rem;
+}
+
+p {
+  color: var(--desaturated-blue);
+  font-weight: var(--normal-weight);
+  font-size: var(--paragraph-font-size);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pale-blue);
+  background-image: url('./images/pattern-background-mobile.svg');
+  background-repeat: no-repeat;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.wrap-container {
+  /* border: 1px solid #ccc; */
+  border-radius: 25px;
+  width: 90%;
+  background-color: #fff;
+}
+
+.header {
+  background-image: url('./images/illustration-hero.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.order-summary {
+  padding: 30px 35px;
+}
+
+.order-summary--content {
+  margin: 20px 0;
+}
+
+.order-summary--content p {
+  line-height: 2.4rem;
+}
+
+.order-summary-detail {
+  background-color: var(--very-pale-blue);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.os-detail--icon-wrapper {
+  background-color: var(--pale-blue);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.os-detail--icon-wrapper .icon-wrapper--inner {
+  width: 40px;
+  height: 40px;
+  background-image: url('./images/icon-music.svg');
+}
+
+.os-detail--name {
+  line-height: 2.4rem;
+}
+.os-detail--name p {
+  font-size: 1.3rem;
+}
+
+.os-detail--action a {
+  font-size: 1.3rem;
+  color: var(--bright-blue);
+}
+.os-detail--action a:hover {
+  color: rgba(56, 41, 224, .5);
+  text-decoration: none;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  padding: 0 35px 30px 35px;
+}
+
+.btn {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background: transparent;
+  color: var(--desaturated-blue);
+  font-size: 1.5rem;
+}
+
+.primary {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: var(--bright-blue);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 15px 10px var(--pale-blue);
+}
+
+.primary:hover {
+  background-color: rgba(56, 41, 224, .5);
+}
