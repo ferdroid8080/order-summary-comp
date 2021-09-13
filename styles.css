@@ -49,6 +49,7 @@ body {
   background-color: var(--pale-blue);
   background-image: url('./images/pattern-background-mobile.svg');
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .text-center {
@@ -93,12 +94,17 @@ body {
   align-items: center;
   border-radius: 10px;
 }
+.os-detail--inner {
+  display: flex;
+  flex-direction: row;
+}
 
 .os-detail--icon-wrapper {
   background-color: var(--pale-blue);
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  margin-right: 15px;
 }
 .os-detail--icon-wrapper .icon-wrapper--inner {
   width: 40px;
@@ -148,4 +154,21 @@ body {
 
 .primary:hover {
   background-color: rgba(56, 41, 224, .5);
+}
+
+
+/* media queries for 1440px */
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url('./images/pattern-background-desktop.svg');
+  }
+
+  .wrap-container {
+    width: 30%;
+  }
+
+  .header {
+    height: 200px;
+  }
+  
 }
